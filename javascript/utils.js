@@ -43,7 +43,7 @@ const renderRowInfo = (key, info) => {
   if (info.additional) {
     findCell(row, 4).textContent = Number(info.additional).toFixed(2);
   } else {
-    findCell(row, 4).textContent = '—';
+    findCell(row, 4).textContent = '-';
   }
 };
 
