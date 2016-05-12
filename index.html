@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-body">
+      <p>Hello, my name is Sergey Zelenov. I'm a web-developer from Saint Petersburg, Russia.</p>
+      <p>
+        This small application allows you to draw geometrical shapes.
+        You can choose any 3 points on the screen (<span style="color:red">red</span> circles are drawn in
+        each point). If there are 3 points on the screen, 2 shapes are
+        additionally drawn automatically: <span style="color:blue">blue</span> parallelogram (having 3 of
+        its corners in these 3 points) and <span style="color:#FFF380">yellow</span> circle (having the same
+        area and centre of mass as the parallelogram).
+      </p>
+      <p>
+        Since there are 3 parallelograms from 3 points, you can switch from one to another.
+      </p>
+      <p>You can reset all figures by pressing "reset" button on the top of the screen any time.</p>
+      <p>There is also a table with all numerical values presenting the current scene.</p>
+      <p>And you could drag any <span style="color:red">red</span> circle on the screen.</p>
+      <button class="close">Close</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="toolbar">
+      <button class="switch">choose another vertex</button>
+      <button class="reset">reset</button>
+      <button class="about">about</button>
+    </div>
+    <table class="information">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>X</th>
+          <th>Y</th>
+          <th>Area/Radius</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="vertexA">
+          <td>Vertex A</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="vertexB">
+          <td>Vertex B</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="vertexC">
+          <td>Vertex C</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr  class="parallelogram">
+          <td>Parallelogram</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="circle">
+          <td>Circle</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <canvas id="canvas"></canvas>
+  <script src="build/bundle.js"></script>
+</body>
+</html>
